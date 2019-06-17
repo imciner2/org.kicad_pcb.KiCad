@@ -1,0 +1,3 @@
+# Ignore files created when building the Flatpak
+.flatpak-builder/*
+build-dir/
