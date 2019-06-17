@@ -1,0 +1,13 @@
+{
+    "name": "kicad-symbols",
+    "sources": [
+        {
+            "type": "extra-data",
+            "filename": "kicad-symbols-5.1.2.tar.gz",
+            "url": "https://github.com/KiCad/kicad-symbols/archive/5.1.2.tar.gz",
+            "sha256": "e89fc4d2ad27a287a9d8924e6c6c4837d39f2a7192797b8c31535ffb18f2dc8c",
+            "size": 2858506
+        }
+    ],
+    "buildsystem": "cmake"
+}

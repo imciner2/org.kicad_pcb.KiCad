@@ -1,0 +1,12 @@
+{
+    "name": "kicad-footprints",
+    "sources": [
+        {
+            "type": "extra-data",
+            "filename": "kicad-footprints.tar.gz",
+            "url": "https://github.com/KiCad/kicad-footprints/archive/5.1.2.tar.gz",
+            "sha256": "fb0f983393c78dc9bb0b060827a98e57d96abe9881f9fb356c2afdecc0fdbfd1",
+            "size": 5389330
+        }
+    ]
+}

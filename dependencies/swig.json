@@ -1,0 +1,22 @@
+{
+    "name": "swig",
+    "cleanup": [ "*" ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "http://prdownloads.sourceforge.net/swig/swig-4.0.0.tar.gz",
+            "sha256": "e8a39cd6437e342cdcbd5af27a9bf11b62dc9efec9248065debcb8276fcbb925"
+        }
+    ],
+    "buildsystem": "autotools",
+    "config-opts": [
+        "--with-python3=/usr/bin/python3",
+        "--without-ocaml",
+        "--without-php",
+        "--without-r",
+        "--without-go",
+        "--without-octave",
+        "--without-ruby",
+        "--without-perl5"
+    ]
+}

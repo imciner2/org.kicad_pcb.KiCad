@@ -1,0 +1,88 @@
+{
+    "name": "kicad-libraries-installer",
+    "sources": [
+        {
+            "type": "script",
+            "dest-filename": "apply_extra",
+            "commands": [
+                "./install_footprints",
+                "./install_packages3D",
+                "./install_symbols",
+                "./install_templates"
+            ]
+        },
+        {
+            "type": "script",
+            "dest-filename": "install_footprints",
+            "commands": [
+                "cd /app/bin",
+                "tar -xf kicad-footprints.tar.gz",
+                "cd kicad-footprints/",
+                "mkdir -p /app/usr/share/kicad/modules",
+                "cp --parents *.pretty.*.kicad_mod /app/usr/share/kicad/modules",
+                "mkdir -p /app/usr/share/kicad/templates",
+                "mv fp-lib-table /app/usr/share/kicad/templates/",
+                "cd /app/bin",
+                "rm -rf kicad-footprints",
+                "rm -rf kicad-footprints.tar.gz"
+            ]
+        },
+        {
+            "type": "script",
+            "dest-filename": "install_packages3D",
+            "commands": [
+                "cd /app/bin",
+                "tar -xf kicad-packages3D.tar.gz",
+                "cd kicad-packages3D/",
+                "mkdir -p /app/usr/share/kicad/modules/packages3d",
+                "cp --parents *.3dshapes/*.wrl /app/usr/share/kicad/modules/packages3d",
+                "cp --parents *.3dshapes/*.step /app/usr/share/kicad/modules/packages3d",
+                "cd /app/bin",
+                "rm -rf kicad-packages3D",
+                "rm -rf kicad-packages3D.tar.gz"
+            ]
+        },
+        {
+            "type": "script",
+            "dest-filename": "install_symbols",
+            "commands": [
+                "cd /app/bin",
+                "tar -xf kicad-symbols.tar.gz",
+                "cd kicad-symbols/",
+                "mkdir -p /app/usr/share/kicad/library",
+                "cp *.lib /app/usr/share/kicad/library",
+                "cp *.dcm /app/usr/share/kicad/library",
+                "mkdir -p /app/usr/share/kicad/templates",
+                "mv sym-lib-table /app/usr/share/kicad/templates/",
+                "cd /app/bin",
+                "rm -rf kicad-symbols",
+                "rm -rf kicad-symbols.tar.gz"
+            ]
+        },
+        {
+            "type": "script",
+            "dest-filename": "install_templates",
+            "commands": [
+                "cd /app/bin",
+                "tar -xf kicad-templates.tar.gz",
+                "cd kicad-templates/",
+                "rm -rf CMake*",
+                "mkdir -p /app/usr/share/kicad/templates",
+                "cp *.kicad_wks /app/usr/share/kicad/templates",
+                "cp --parents -r */* /app/usr/share/kicad/templates/",
+                "cd /app/bin",
+                "rm -rf kicad-templates",
+                "rm -rf kicad-templates.tar.gz"
+            ]
+        }
+    ],
+    "buildsystem": "simple",
+    "build-commands": [
+        "install -d /app/bin",
+        "install apply_extra /app/bin",
+        "install install_footprints /app/bin",
+        "install install_packages3D /app/bin",
+        "install install_symbols /app/bin",
+        "install install_templates /app/bin"
+    ]
+}

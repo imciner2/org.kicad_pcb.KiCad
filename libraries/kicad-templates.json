@@ -1,0 +1,12 @@
+{
+    "name": "kicad-templates",
+    "sources": [
+        {
+            "type": "extra-data",
+            "filename": "kicad-templates-5.1.2.tar.gz",
+            "url": "https://github.com/KiCad/kicad-templates/archive/5.1.2.tar.gz",
+            "sha256": "fd14978af2d5b64d41561c8cd954f386a10e1548d6db2d4998281deffddeffbb",
+            "size": 1620807
+        }
+    ]
+}

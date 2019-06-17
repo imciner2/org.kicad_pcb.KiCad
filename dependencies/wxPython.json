@@ -1,0 +1,17 @@
+{
+    "name": "wxPython",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://files.pythonhosted.org/packages/9a/a1/9c081e04798eb134b63def3db121a6e4436e1d84e76692503deef8e75423/wxPython-4.0.6.tar.gz",
+            "sha256": "35cc8ae9dd5246e2c9861bb796026bbcb9fb083e4d49650f776622171ecdab37"
+        }
+    ],
+    "buildsystem": "simple",
+    "build-commands": [
+        "python3 build.py build_py --python=/usr/bin/python3 --gtk3 --use_syswx --release --no_magic",
+        "python3 build.py install_py --destdir=/app/wxPython",
+        "cp -r /app/wxPython/usr/* /app/",
+        "rm -rf /app/wxPython"
+    ]
+}

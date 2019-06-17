@@ -1,0 +1,13 @@
+{
+    "name": "kicad-packages3D",
+    "sources": [
+        {
+            "type": "extra-data",
+            "filename": "kicad-packages3D-5.1.2.tar.gz",
+            "url": "https://github.com/KiCad/kicad-packages3D/archive/5.1.2.tar.gz",
+            "sha256": "5c3dfc3cc7f11ce5a19853b86a79dbeef7383ccbf7ecaf9c83728bcc28edef09",
+            "size": 888156027
+        }
+    ],
+    "buildsystem": "cmake"
+}

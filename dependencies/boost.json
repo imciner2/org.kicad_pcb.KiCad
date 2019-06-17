@@ -1,0 +1,15 @@
+{
+    "name": "boost",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.gz",
+            "sha256": "9a2c2819310839ea373f42d69e733c339b4e9a19deab6bfec448281554aa4dbb"
+        }
+    ],
+    "buildsystem": "simple",
+    "build-commands": [
+        "./bootstrap.sh --prefix=/app",
+        "./b2 install --with-context --with-date_time --with-filesystem --with-iostreams --with-locale --with-program_options --with-regex --with-system --with-thread --with-test --prefix=/app"
+    ]
+}
