@@ -41,6 +41,11 @@
                     "type": "archive",
                     "url": "https://launchpad.net/kicad/5.0/5.1.2/+download/kicad-5.1.2.tar.xz",
                     "sha256": "84376c50b436a1aec985d3de94e6f445ea5c1e5c75c04a239c9837a1ab40778a"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/0001-Fix-for-SWIG-4.0.0.patch",
+                    "strip-components": 1
                 }
             ],
             "buildsystem": "cmake",
@@ -52,7 +57,6 @@
                 "-DGLEW_GLEW_LIBRARY=/app/lib/libGLEW.so",
                 "-DGLEW_INCLUDE_DIR=/app/include/GL",
                 "-DOPENGL_glu_LIBRARY=/app/lib/libGLU.so",
-                "-DKICAD_SKIP_BOOST=ON",
                 "-DKICAD_SCRIPTING=ON",
                 "-DKICAD_SCRIPTING_MODULES=ON",
                 "-DKICAD_SCRIPTING_PYTHON3=ON",

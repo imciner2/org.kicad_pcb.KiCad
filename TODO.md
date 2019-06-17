@@ -2,6 +2,7 @@
 
 ## KiCad
 
+- [ ] Remove patch for SWIG 4.0.0 compatibility when 5.1.3 is released (it is already included upstream)
 - [ ] Add in the content rating tag to the appdata.xml file and submit change to upstream
 - [ ] Add in .desktop files for the internal programs other than the kicad launcher (e.g. pcbnew, gerbview, eeschema, etc.)
 - [ ] Figure out licensing so that it is not marked proprietary in the software viewers
