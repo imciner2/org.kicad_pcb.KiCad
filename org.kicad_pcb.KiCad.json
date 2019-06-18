@@ -54,9 +54,12 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DBOOST_ROOT=/app",
                 "-DOCE_DIR=/app",
-                "-DGLEW_GLEW_LIBRARY=/app/lib/libGLEW.so",
+                "-DGLEW_LIBRARY=/app/lib/libGLEW.so",
                 "-DGLEW_INCLUDE_DIR=/app/include/GL",
                 "-DOPENGL_glu_LIBRARY=/app/lib/libGLU.so",
+                "-DPYTHON_EXECUTABLE=/usr/bin/python3",
+                "-DUSE_WX_GRAPHICS_CONTEXT=OFF",
+                "-DUSE_WX_OVERLAY=OFF",
                 "-DKICAD_SCRIPTING=ON",
                 "-DKICAD_SCRIPTING_MODULES=ON",
                 "-DKICAD_SCRIPTING_PYTHON3=ON",
@@ -66,7 +69,7 @@
                 "-DKICAD_SPICE=ON",
                 "-DKICAD_USE_OCE=ON",
                 "-DKICAD_USE_OCC=OFF",
-                "-DBUILD_GITHUB_PLUGIN=OFF"
+                "-DBUILD_GITHUB_PLUGIN=ON"
             ]
         },
         {
