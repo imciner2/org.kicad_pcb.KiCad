@@ -1,0 +1,20 @@
+{
+  "name": "bundler",
+  "buildsystem": "simple",
+  "build-commands": [
+    "gem install --install-dir /app/lib/ruby --local bundler-2.0.2.gem",
+    "gem install --install-dir /app/lib/ruby --local bundler-1.17.3.gem"
+  ],
+  "sources": [
+    {
+      "type": "file",
+      "url": "https://rubygems.org/downloads/bundler-2.0.2.gem",
+      "sha256": "4c2ae1fce8a072b832ac7188f1e530a7cff8f0a69d8a9621b32d1407db00a2d0"
+    },
+    {
+      "type": "file",
+      "url": "https://rubygems.org/downloads/bundler-1.17.3.gem",
+      "sha256": "bc4bf75b548b27451aa9f443b18c46a739dd22ad79f7a5f90b485376a67dc352"
+    }
+  ]
+}

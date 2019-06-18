@@ -88,6 +88,10 @@
                 "-DKICAD_I18N_UNIX_STRICT_PATH=ON"
             ]
         },
+        "dependencies/perl-build.json",
+        "dependencies/po4a.json",
+        "dependencies/ruby-bundler.json",
+        "dependencies/asciidoctor.json",
         {
             "name": "kicad-doc",
             "sources": [

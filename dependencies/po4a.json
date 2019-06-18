@@ -1,0 +1,17 @@
+{
+  "name": "po4a",
+  "buildsystem": "simple",
+  "build-commands": [
+    "export PERL5LIB=$PERL5LIB:/app/lib/perl5",
+    "perl -I /app/lib/perl5 Build.PL",
+    "PERL5LIB=$PERL5LIB:/app/lib/perl5 ./Build",
+    "PERL5LIB=$PERL5LIB:/app/lib/perl5 ./Build install --install_base=/app"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://github.com/mquinson/po4a/releases/download/v0.56/po4a-0.56.tar.gz",
+      "sha256": "d95636906bf71d9ce5131f57045b84c46ae33417346e2437a90013ee01e7d04f"
+    }
+  ]
+}
