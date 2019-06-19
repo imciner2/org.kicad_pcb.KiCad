@@ -10,8 +10,6 @@
     "buildsystem": "simple",
     "build-commands": [
         "python3 build.py build_py --python=/usr/bin/python3 --gtk3 --use_syswx --release --no_magic",
-        "python3 build.py install_py --destdir=/app/wxPython",
-        "cp -r /app/wxPython/usr/* /app/",
-        "rm -rf /app/wxPython"
+        "python3 build.py install_py --extra_setup=--prefix=/app"
     ]
 }
